@@ -1,0 +1,19 @@
+[
+    {
+		"name": "userId",
+		"type": "INTEGER",
+		"mode": "REQUIRED"
+	},
+	{
+		"name": "movieId",
+		"type": "INTEGER"
+	},
+	{
+		"name": "rating",
+		"type": "FLOAT"
+	},
+	{
+		"name": "timestamp",
+		"type": "TIMESTAMP"
+	}
+]

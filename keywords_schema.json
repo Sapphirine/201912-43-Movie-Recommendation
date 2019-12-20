@@ -1,0 +1,22 @@
+[
+    {
+		"name": "id",
+		"type": "INTEGER",
+		"mode": "REQUIRED"
+	},
+	{
+		"name": "keywords",
+		"mode": "REPEATED",
+		"type": "RECORD",
+		"fields": [
+			{
+				"name": "id",
+				"type": "INTEGER"
+			},
+			{
+				"name": "name",
+				"type": "STRING"
+			}
+		]
+	}
+]

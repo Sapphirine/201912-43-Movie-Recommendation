@@ -1,0 +1,84 @@
+[
+	{
+		"name": "id",
+		"description": "The TMDB ID of movie",
+		"type": "INTEGER",
+		"mode": "REQUIRED"
+	},
+	{
+		"name": "cast",
+		"description": "A stringified list of dictionaries consisting of cast names and the corresponding characters they played",
+		"mode": "REPEATED",
+		"type": "RECORD",
+		"fields": [
+			{
+				"name": "cast_id",
+				"type": "INTEGER"
+			},
+			{
+				"name": "character",
+				"type": "STRING"
+			},
+			{
+				"name": "credit_id",
+				"type": "STRING"
+			},
+			{
+				"name": "gender",
+				"type": "INTEGER"
+			},
+			{
+				"name": "id",
+				"type": "INTEGER"
+			},
+			{
+				"name": "name",
+				"type": "STRING"
+			},
+			{
+				"name": "order",
+				"type": "INTEGER"
+			},
+			{
+				"name": "profile_path",
+				"type": "STRING"
+			}
+		]
+	},
+	{
+		"name": "crew",
+		"description": "A stringified list of dictionaries consisting of crew names and the function they performed",
+		"mode": "REPEATED",
+		"type": "RECORD",
+		"fields": [
+			{
+				"name": "credit_id",
+				"type": "STRING"
+			},
+			{
+				"name": "department",
+				"type": "STRING"
+			},
+			{
+				"name": "gender",
+				"type": "INTEGER"
+			},
+			{
+				"name": "id",
+				"type": "INTEGER"
+			},
+			{
+				"name": "job",
+				"type": "STRING"
+			},
+			{
+				"name": "name",
+				"type": "STRING"
+			},
+			{
+				"name": "profile_path",
+				"type": "STRING"
+			}
+		]
+	}
+]

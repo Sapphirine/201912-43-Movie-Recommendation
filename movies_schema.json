@@ -1,0 +1,161 @@
+[
+	{
+		"name": "id",
+		"mode": "REQUIRED",
+		"type": "INTEGER"
+	},
+	{
+		"name": "imdb_id",
+		"type": "STRING"
+	},
+	{
+		"name": "adult",
+		"type": "BOOLEAN"
+	},
+	{
+		"name": "belongs_to_collection",
+		"type": "RECORD",
+		"fields": [
+			{
+				"name": "id",
+				"type": "INTEGER"
+			},
+			{
+				"name": "name",
+				"type": "STRING"
+			},
+			{
+				"name": "poster_path",
+				"type": "STRING"
+			},
+			{
+				"name": "backdrop_path",
+				"type": "STRING"
+			}
+		]
+	},
+	{
+		"name": "budget",
+		"type": "INTEGER"
+	},
+	{
+		"name": "genres",
+		"type": "RECORD",
+		"mode": "REPEATED",
+		"fields": [
+			{
+				"name": "id",
+				"type": "INTEGER"
+			},
+			{
+				"name": "name",
+				"type": "STRING"
+			}
+		]
+	},
+	{
+		"name": "homepage",
+		"type": "STRING"
+	},
+	{
+		"name": "original_language",
+		"type": "STRING"
+	},
+	{
+		"name": "original_title",
+		"type": "STRING"
+	},
+	{
+		"name": "overview",
+		"type": "STRING"
+	},
+	{
+		"name": "popularity",
+		"type": "FLOAT"
+	},
+	{
+		"name": "poster_path",
+		"type": "STRING"
+	},
+	{
+		"name": "production_companies",
+		"type": "RECORD",
+		"mode": "REPEATED",
+		"fields": [
+			{
+				"name": "name",
+				"type": "STRING"
+			},
+			{
+				"name": "id",
+				"type": "INTEGER"
+			}
+		]
+	},
+	{
+		"name": "production_countries",
+		"type": "RECORD",
+		"mode": "REPEATED",
+		"fields": [
+			{
+				"name": "iso_3166_1",
+				"type": "STRING"
+			},
+			{
+				"name": "name",
+				"type": "STRING"
+			}
+		]
+	},
+	{
+		"name": "release_date",
+		"type": "DATE"
+	},
+	{
+		"name": "revenue",
+		"type": "INTEGER"
+	},
+	{
+		"name": "runtime",
+		"type": "INTEGER"
+	},
+	{
+		"name": "spoken_languages",
+		"type": "RECORD",
+		"mode": "REPEATED",
+		"fields": [
+			{
+				"name": "iso_639_1",
+				"type": "STRING"
+			},
+			{
+				"name": "name",
+				"type": "STRING"
+			}
+		]
+	},
+	{
+		"name": "status",
+		"type": "STRING"
+	},
+	{
+		"name": "tagline",
+		"type": "STRING"
+	},
+	{
+		"name": "title",
+		"type": "STRING"
+	},
+	{
+		"name": "video",
+		"type": "BOOLEAN"
+	},
+	{
+		"name": "vote_average",
+		"type": "FLOAT"
+	},
+	{
+		"name": "vote_count",
+		"type": "INTEGER"
+	}
+]
